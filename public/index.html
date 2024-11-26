@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryknoll Homework Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Login Page -->
+  <div class="login-container" id="login-container">
+    <h1>Maryknoll 家課管理系統</h1>
+    <p>請輸入用戶名和密碼進行登錄</p>
+    <form id="login-form">
+      <div class="input-group">
+        <label for="username">用戶名</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">密碼</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="login-btn">登入</button>
+      <p id="error-message" class="error-message"></p>
+    </form>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container hidden" id="main-container">
+    <header>
+      <h1>Maryknoll Homework Management System</h1>
+      <div class="current-time" id="current-time"></div>
+    </header>
+    <div class="content">
+      <!-- Left Section: Calendar -->
+      <div class="left-section">
+        <div class="class-info">
+          <h2>3C 班教師名單</h2>
+          <!-- 可以在這裡填入教師名單 -->
+        </div>
+        <div class="calendar">
+          <h3 id="current-month">載入中...</h3>
+          <table id="calendar-table"></table>
+        </div>
+      </div>
+      
+      <!-- Right Section: Homework List -->
+      <div class="right-section">
+        <h2>家課記錄</h2>
+        <ul class="task-list" id="homework-list">
+          <!-- 家課資料將在這裡顯示 -->
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <img src="images/school_building.png" alt="校舍圖片" class="background-img">
+      <p>© 2024 Maryknoll Homework Management System</p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

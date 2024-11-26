@@ -1,0 +1,138 @@
+/* 通用設置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif SC', FangSong, "宋体", serif;
+  background-color: #f7f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 登入頁面 */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9f0fa;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-container h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-family: FangSong, "宋体", serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 300px;
+  padding: 10px;
+  background-color: #a8d5ba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #96c9aa;
+}
+
+.error-message {
+  color: #d9534f;
+  margin-top: 10px;
+  font-weight: bold;
+  display: none;
+}
+
+/* 主頁面 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #003366;
+}
+
+.current-time {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #00509e;
+}
+
+/* 左側日曆 */
+.calendar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.calendar .today {
+  background-color: #ffe599;
+  font-weight: bold;
+}
+
+/* 校舍圖片設置 */
+.background-img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
